@@ -1,0 +1,7 @@
+<h1>Hello World</h1>
+
+{% if user.is_authenticated %}
+    <a href="/logout">Log out</a>
+{% else %}
+    <a href="{% url "social:begin" "spotify" %}">Spotify</a>
+{% endif %}
